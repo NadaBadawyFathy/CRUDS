@@ -1,0 +1,114 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 90%;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+.project-title {
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+.project-title h1 {
+    margin-bottom: 10px;
+}
+.project-title p {
+    word-spacing: 10px;
+}
+.container form input {
+    padding: 10px 6px;
+    border: 2px solid darkkhaki;
+    outline: none;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+.container form input::placeholder {
+    color: white;
+}
+.container form input:focus::placeholder {
+    opacity: 0;
+    transition: .3s;
+}
+.container form input {
+    width: 250px;
+}
+.container form input:first-of-type ,
+.container form #count ,
+.container form #catg,
+.container form #search {
+    width: calc(100% - 15px);
+}
+.container form .total {
+    display: inline-block;
+    padding: 8px 6px;
+    border-radius: 10px;
+    background-color: darkgoldenrod;
+    color: white;
+}
+.container form .create,
+.container form .search-by button,
+.container form .delete {
+    padding: 6px 0;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: darkgoldenrod;
+    border: 1px solid darkgoldenrod;
+}
+.container form .create {
+    width: 100%;
+}
+.container form .search-by {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.container form .search-by button {
+    width: calc(50% - 30px);
+}
+.container form .delete {
+    width: 100%;
+    color: orangered;
+    display: none;
+}
+.container table {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+.container table th {
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
+.container table tr {
+    width: 100%;
+}
+.container table td {
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="project-title">
+        <h1>CRUDS</h1>
+        <p>CREATE READ UPDATE DELETE SEARCH</p>
+    </div>
+
+    <div class="container">
+        <form action="" onsubmit={submitData()}>
+            <input id="title" name="title" type="text" placeholder="Title" required>
+            <input id="price" name="price" type="number" placeholder="Price" required onkeyup={totalPrice()}>
+            <input id="taxes" name="taxes" type="number" placeholder="Taxes" required onkeyup={totalPrice()}>
+            <input id="ads" name="ads" type="number" placeholder="Ads" required onkeyup={totalPrice()}>
+            <input id="discount" name="discount" type="number" placeholder="Discount" required onkeyup={totalPrice()}>
+            <div class="total">Total: <span></span></div>
+            <input id="count" name="count" type="number" placeholder="Count" required>
+            <input id="catg" name="catg" type="text" placeholder="Category" required>
+            <button class="create" type="submit">Create</button>
+        </form>
+
+        <form action="">
+            <input id="search" name="search" type="text" placeholder="Search">
+            <div class="search-by">
+                <button class="search-title" type="submit" onclick={searchByTitle(event)}>Search By Title</button>
+                <button class="search-catg" type="submit" onclick={searchByCategory(event)}>Search By Category</button>
+            </div>
+            <button class="delete" type="submit" onclick="deleteElement()">Delete All (<span></span>)</button>
+        </form>
+        
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>PRICE</th>
+                <th>TAXES</th>
+                <th>ADS</th>
+                <th>DISCOUNT</th>
+                <th>TOTAL</th>
+                <th>CATEGORY</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>
+            </tr>
+        </table>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
